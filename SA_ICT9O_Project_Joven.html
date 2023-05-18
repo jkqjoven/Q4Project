@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<title>ICT Project Q4</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			font-family: 'Bebas Neue', sans-serif;
+		}
+		.center {
+  			text-align: center;
+  			border: 10px skyblue;
+		}
+		div {
+  			border: 1px solid black;
+  			margin-top: 50px;
+  			margin-bottom: 100px;
+  			margin-right: 130px;
+  			margin-left: 130px;
+  			padding-top: 20px;
+  			padding-right: 30px;
+  			padding-bottom: 30px;
+  			padding-left: 20px;
+  			border-radius: 25px;
+			}
+		body{
+			background-image: url(https://i.pinimg.com/474x/d3/28/70/d328708cf3e48862414456249d15708a.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Length Converter</h1>
+
+<div style="background-color: #FFFFFF;" class="center">
+<p>
+  <label>Millimeters</label>
+  <input id="inputMillimeters" type="number" placeholder="Millimeters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Centimeters: <span id="outputCentimeters"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputCentimeters").innerHTML=valNum/10;
+}
+</script>
+</div>
+
+<div style="background-color: #FFFFFF;" class="center">
+<p>
+  <label>Millimeters</label>
+  <input id="inputMillimeters" type="number" placeholder="Millimeters" oninput="lengthConverter(this.value)" onchange="lengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+
+<script>
+function lengthConverter(Num) {
+  document.getElementById("outputMeters").innerHTML=Num/1000;
+}
+</script>
+</div>
+
+<div style="background-color: #FFFFFF;" class="center">
+<p>
+  <label>Millimeters</label>
+  <input id="inputMillimeters" type="number" placeholder="Millimeters" oninput="lengthconverter(this.value)" onchange="lengthconverter(this.value)">
+</p>
+<p>Kilometers: <span id="outputKilometers"></span></p>
+
+<script>
+function lengthconverter(val) {
+  document.getElementById("outputKilometers").innerHTML=val/1000000;
+}
+</script>
+</div>
+
+</body>
+</html>
